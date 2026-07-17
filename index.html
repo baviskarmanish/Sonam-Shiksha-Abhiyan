@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>सोनम वांगचुक बचाओ</title>
+<title>Support Educational Reforms | सोनम वांगचुक अभियान</title>
 
 <style>
 
@@ -12,276 +13,187 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
 
 body{
-background:#eef3f8;
-font-family:Arial,sans-serif;
+background:#f5f7fa;
 color:#222;
 }
 
-.header{
+header{
 
-background:linear-gradient(180deg,#FF9933,#ffffff,#138808);
+background:linear-gradient(
+180deg,
+#FF9933,
+#ffffff,
+#138808);
 
-padding:35px 20px;
+padding:30px;
+text-align:center;
+box-shadow:0 3px 8px rgba(0,0,0,.2);
+
+}
+
+header h1{
+
+color:#000080;
+font-size:34px;
+margin-bottom:12px;
+
+}
+
+header h2{
+
+font-size:21px;
+font-weight:normal;
+
+}
+
+.language{
 
 text-align:center;
-
-box-shadow:0 3px 12px rgba(0,0,0,.25);
-
-}
-
-.header h1{
-
-color:#c40000;
-
-font-size:46px;
-
-margin:10px 0;
+padding:20px;
+background:white;
 
 }
 
-.header h2{
+.language button{
 
-color:#008000;
-
-font-size:32px;
-
-margin:10px 0;
-
-}
-
-.header h3{
-
-color:#000;
-
-font-size:28px;
-
-margin:15px 0;
+padding:10px 25px;
+margin:10px;
+font-size:17px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+background:#0b63ce;
+color:white;
 
 }
 
-.header h4{
+.language button:hover{
 
-color:#0a4da2;
-
-font-size:22px;
-
-margin-top:15px;
-
-}
-
-.flag{
-
-font-size:55px;
+background:#084b9d;
 
 }
 
 .container{
 
-width:95%;
-
-max-width:1000px;
-
+max-width:900px;
 margin:auto;
-
-background:white;
-
-margin-top:30px;
-
-padding:30px;
-
-border-radius:15px;
-
-box-shadow:0 0 12px rgba(0,0,0,.20);
+padding:25px;
 
 }
 
-.quote{
+.card{
 
-background:#fff9df;
-
-border-left:8px solid #ff9933;
-
-padding:25px;
-
+background:white;
+padding:30px;
 border-radius:10px;
+box-shadow:0 0 12px rgba(0,0,0,.15);
 
-font-size:22px;
+}
 
+h3{
+
+color:#003366;
+margin-bottom:20px;
+
+}
+
+p{
+
+font-size:18px;
 line-height:1.8;
 
 }
 
-.author{
+.mailButton{
 
-text-align:right;
-
-font-size:24px;
-
+display:inline-block;
+margin-top:30px;
+padding:16px 26px;
+background:#0b63ce;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-size:20px;
 font-weight:bold;
 
-color:#003399;
+}
 
-margin-top:20px;
+.mailButton:hover{
+
+background:#084b9d;
+
+}
+
+footer{
+
+margin-top:50px;
+padding:20px;
+text-align:center;
+background:#eee;
 
 }
 
 </style>
 
+<script>
+
+function showLanguage(lang){
+
+document.getElementById("hindi").style.display="none";
+document.getElementById("english").style.display="none";
+
+document.getElementById(lang).style.display="block";
+
+}
+
+</script>
+
 </head>
 
 <body>
 
-<div class="header">
+<header>
 
-<div class="flag">
-🇮🇳 🇮🇳 🇮🇳
-</div>
-
-<h1>
-सोनम वांगचुक बचाओ!
-</h1>
+<h1>🇮🇳 भारत सरकार से विनम्र अनुरोध 🇮🇳</h1>
 
 <h2>
-शैक्षणिक कुपोषण मिटावो
+
+सोनम वांगचुक जी का अनशन समाप्त कराइए।<br>
+
+शैक्षिक सुधार कर भारत का भविष्य बनाइए।
+
 </h2>
 
-<h3>
-भारत सरकार से विनम्र अनुरोध
-</h3>
+</header>
 
-<h4>
-शिक्षा में पारदर्शिता, न्याय एवं सुधार के लिए राष्ट्रव्यापी नागरिक अभियान
-</h4>
+<div class="language">
+
+<h3>Select Language / भाषा चुनें</h3>
+
+<button onclick="showLanguage('hindi')">
+
+🇮🇳 हिन्दी
+
+</button>
+
+<button onclick="showLanguage('english')">
+
+🇬🇧 English
+
+</button>
 
 </div>
 
 <div class="container">
 
-<div class="quote">
+<div id="hindi" class="card">
 
-<b style="color:#b30000;font-size:26px;">
+<h3>
 
-"विद्या के बिना बुद्धि गई,<br>
+विषय : सोनम वांगचुक जी का अनशन समाप्त कर शैक्षिक सुधार करने हेतु विनम्र अनुरोध
 
-बुद्धि के बिना नीति गई,<br>
-
-नीति के बिना प्रगति गई,<br>
-
-प्रगति के बिना धन गया,<br>
-
-धन के बिना शूद्र टूट गया,<br>
-
-एक ही अविद्या ने इतने अनर्थ कर डाले।"
-
-</b>
-
-<div class="author">
-
-— महात्मा ज्योतिराव फुले
-
-</div>
-
-</div>
-
-<br><br>
-
-<h2 style="text-align:center;color:#c40000;">
-
-राष्ट्रीय जन-अभियान
-
-</h2>
-
-<p style="font-size:22px;line-height:1.9;text-align:justify;">
-
-प्रिय नागरिकों,
-
-यह अभियान शिक्षा में पारदर्शिता, न्याय एवं सुधार के लिए समर्पित है।
-हम भारत सरकार से विनम्र अनुरोध करते हैं कि श्री सोनम वांगचुक जी से संवाद स्थापित कर उनकी मांगों पर गंभीरतापूर्वक विचार किया जाए तथा शिक्षा व्यवस्था में पारदर्शिता और विश्वास बहाल करने हेतु आवश्यक कदम उठाए जाएँ।
-
-</p>
-
-<!-- ========================= -->
-<!-- अभियानाचे उद्दिष्ट -->
-<!-- ========================= -->
-
-<div style="margin-top:40px;">
-
-<h2 style="text-align:center;color:#c40000;">
-हमारा उद्देश्य
-</h2>
-
-<p style="font-size:22px;line-height:1.9;text-align:justify;">
-
-यह अभियान किसी राजनीतिक दल या व्यक्ति के विरोध के लिए नहीं है।
-
-यह अभियान भारत की शिक्षा व्यवस्था में पारदर्शिता, न्याय, उत्तरदायित्व एवं विश्वास को मजबूत बनाने हेतु राष्ट्रव्यापी नागरिक पहल है।
-
-हम भारत सरकार से विनम्र अनुरोध करते हैं कि श्री सोनम वांगचुक जी से सकारात्मक संवाद स्थापित किया जाए तथा शिक्षा सुधार से जुड़े विषयों पर गंभीरतापूर्वक विचार किया जाए।
-
-</p>
-
-</div>
-
-<hr style="margin:40px 0;">
-
-<h2 style="text-align:center;color:#c40000;">
-भारत सरकार से विनम्र अनुरोध
-</h2>
-
-<div id="letter"
-style="
-background:#f8f9fa;
-padding:25px;
-border-radius:12px;
-border:2px solid #ddd;
-font-size:21px;
-line-height:1.9;
-text-align:justify;">
-
-माननीय प्रधानमंत्री जी,
-
-सादर नमस्कार।
-
-हम भारत के नागरिक शिक्षा में पारदर्शिता, न्याय एवं सुधार के उद्देश्य से यह विनम्र अनुरोध प्रस्तुत कर रहे हैं।
-
-श्री सोनम वांगचुक जी द्वारा शिक्षा व्यवस्था एवं विद्यार्थियों के भविष्य से जुड़े जिन विषयों को उठाया गया है, उन पर कृपया गंभीरतापूर्वक विचार किया जाए।
-
-देश के करोड़ों विद्यार्थियों एवं अभिभावकों का विश्वास बनाए रखने के लिए परीक्षा प्रणाली को पूर्णतः पारदर्शी एवं विश्वसनीय बनाया जाए।
-
-यदि किसी परीक्षा में अनियमितता या भ्रष्टाचार हुआ है तो दोषियों के विरुद्ध निष्पक्ष एवं कठोर कार्रवाई सुनिश्चित की जाए।
-
-हमारा विश्वास है कि संवाद, पारदर्शिता और न्याय के माध्यम से ही भारत की शिक्षा व्यवस्था और अधिक सुदृढ़ बन सकती है।
-
-आपसे विनम्र अनुरोध है कि इस विषय पर सकारात्मक पहल कर विद्यार्थियों के उज्ज्वल भविष्य हेतु आवश्यक कदम उठाने की कृपा करें।
-
-सादर।
-
-<br><br>
-
-<b>
-भारत के जागरूक नागरिक
-</b>
-
-</div>
-
-<br><br>
-
-<div style="text-align:center;">
-
-<button onclick="copyLetter()"
-style="
-background:#1565c0;
-color:white;
-font-size:22px;
-padding:15px 35px;
-border:none;
-border-radius:10px;
-cursor:pointer;
-margin:10px;">
-
-📋 पत्र <a href="mailto:connect@mygov.nic.in?subject=Request%20to%20Consider%20Sonam%20Wangchuk%27s%20Appeal%20for%20Education%20Reforms&body=Respected%20Sir/Madam,%0A%0AI%20kindly%20request%20the%20Government%20of%20India%20to%20take%20serious%20note%20of%20Shri%20Sonam%20Wangchuk%27s%20appeal%20regarding%20education%20reforms%20and%20the%20NEET%20issue.%20Please%20consider%20initiating%20constructive%20dialogue%20and%20appropriate%20action.%0A%0AThank%20you.">
-📧 Send Email to MyGov
-</a>
+</h3>
